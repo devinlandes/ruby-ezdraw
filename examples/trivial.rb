@@ -2,15 +2,13 @@ require 'ezdraw'
  
 include EZDraw::DSL
 
-init([200,200])
+init
 
 stroke(Red)
 fill(Green)
+text(0,0,"hello world")
 circle(width/2, height/2, width/3)
 
-stroke(Black)
-text(0,0,"hello world")
 waitkey
-
 cleanup
 
